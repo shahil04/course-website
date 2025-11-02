@@ -127,8 +127,10 @@ st.sidebar.info(f"Showing content for **{selected_category}**")
 # --- Dynamic content for each category ---
 if selected_category == "Forms":
     st.sidebar.markdown("### 📝 Available Forms")
-    st.sidebar.markdown("- [Registration Form](https://forms.gle/example1)")
-    st.sidebar.markdown("- [Feedback Form](https://forms.gle/example2)")
+    st.sidebar.markdown("- [Project Submit Form](https://forms.gle/nLX5d2vZYjJbMHWw6)")
+    st.sidebar.markdown("- [Self Introductions Form](https://forms.gle/at38YRP8eEJYrdoK6)")
+    st.sidebar.markdown("- [Google Review Form](https://g.page/r/CdkLKpYqfMbCEAI/review)")
+    st.sidebar.markdown("- [Feedback Form](https://g.page/r/CdkLKpYqfMbCEAI/review)")
     st.sidebar.markdown("- [Course Enrollment](https://forms.gle/example3)")
 
 elif selected_category == "Course Materials":
@@ -277,6 +279,6 @@ elif st.session_state.nav_page == "Support":
     st.markdown("""
 If you enjoy our free courses, you can support our work:
 - ⭐ Star our GitHub repo  
-- ☕ [Buy Me a Coffee](https://www.buymeacoffee.com)  
+- ⭐ Star our [Google Review ](https://g.page/r/CdkLKpYqfMbCEAI/review))  
 - 📢 Share this app with friends!
 """, unsafe_allow_html=True)
