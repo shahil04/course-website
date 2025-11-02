@@ -91,7 +91,7 @@ Below are some screenshots of the platform to give you a preview of how it looks
 
 We'd love to connect with you!
 
-* **Website**: [www.cswithshahil.com](https://www.cswithshahil.com)
+* **Website**: [www.cswithshahil.com](https://cswithshahil.streamlit.app/)
 * **LinkedIn**: [Follow us on LinkedIn](https://www.linkedin.com/in/your-profile-link/)
 * **Google Reviews**: [Leave a review on Google](https://goo.gl/maps/example-link)
 

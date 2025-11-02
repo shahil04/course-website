@@ -6,6 +6,75 @@ st.set_page_config(page_title="Courses Dashboard", layout="wide")
 # Page title
 st.title("Welcome to **CSwithShahil** - Free Online Courses Platform")
 
+# --- YouTube Subscribe Button ---
+channel_id = "UCM1Ge17WU-d2QwIvFVDlNSA"
+subscribe_url = f"https://www.youtube.com/channel/{channel_id}?sub_confirmation=1"
+
+st.sidebar.markdown(
+    f"""
+    <style>
+        .sidebar-subscribe {{
+            text-align: center;
+            margin-bottom: 20px;
+        }}
+        .subscribe-button {{
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: #ffffff !important;
+            padding: 12px 26px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none !important;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }}
+        .subscribe-button:hover {{
+            background: linear-gradient(135deg, #e60000, #ff3333);
+            transform: scale(1.07);
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+        }}
+        .subscribe-button:visited,
+        .subscribe-button:active {{
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }}
+        .subscribe-icon {{
+            background-color: white;
+            color: #ff0000;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }}
+        @keyframes pulse {{
+            0% {{ box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6); }}
+            70% {{ box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }}
+            100% {{ box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }}
+        }}
+    </style>
+
+    <div class="sidebar-subscribe">
+        <a href="{subscribe_url}" target="_blank" class="subscribe-button">
+            <div class="subscribe-icon">▶</div>
+            Subscribe on YouTube
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 # --- Load playlists data from secrets ---
